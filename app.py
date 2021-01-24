@@ -14,7 +14,12 @@ class AppWindow(QtWidgets.QMainWindow):
         self.show()
 
     def initialize_UI(self):
-        # hide student reg number spin box
+        """
+            Initialze the ui and add basic functionality like:
+            close buttons
+            toggle between stackedWidget pages
+            ...
+        """
         self.ui.stdreg_number.hide()
         self.ui.stackedWidget.setCurrentIndex(0)
         self.ui.exit_btn.clicked.connect(self.close)
