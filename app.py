@@ -16,8 +16,9 @@ class AppWindow(QtWidgets.QMainWindow):
     def initialize_UI(self):
         """
             Initialze the ui and add basic functionality like:
-            close buttons
-            toggle between stackedWidget pages
+            hide student reg number spinBox at startup.
+            close buttons.
+            toggle between stackedWidget pages.
             ...
         """
         self.ui.stdreg_number.hide()
